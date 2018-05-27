@@ -1,0 +1,244 @@
+p, a, div, span {
+    font-family: 'Lato', sans-serif;
+}
+
+.panel {
+    transition: 0.5s;
+    background-color: #282828;
+    position: absolute;
+    width: 320px;
+    display: none;
+    z-index: 99;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.panel__title {
+    padding: 15px 0 7px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+select:active, select:focus, option:focus, option:active {
+  outline:none
+}
+
+.font__select {
+    width: 200px;
+    font-size: 9px;
+    background-color: #3e3f43;
+    border: none;
+    padding: 5px;
+    color: #fff;
+}
+
+.font__color {
+    width: 20px;
+    height: 20px;
+    background-color: #333333;
+    border: 1px solid #3e3f43;
+    margin-left: 11px;
+}
+
+.panel__font {
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+.checkbox__text {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+}
+.checkbox__text:before {
+    content: '';
+    color: #fff;
+    position: absolute;
+    box-sizing: border-box;
+    top: -4px;
+    left: 0;
+    width: 26px;
+    text-align: center;
+    vertical-align: middle;
+    height: 26px;
+    border: 1px solid #3e3f43;
+    background: #3e3f43;
+    transition: .2s;
+}
+
+.checkbox__bold:before {
+    content: 'B';
+    color: #fff;
+}
+
+.checkbox__italic:before {
+    content: '/';
+    color: #fff;
+}
+
+.checkbox_upper:before {
+    content: 'AA';
+    color: #fff;    
+}
+
+.checkbox input:checked + .checkbox__text:before {
+  background: #ff6f50;
+}
+
+.radio input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+}
+
+.radio__text {
+    position: relative;
+    padding: 0 0 0 35px;
+    cursor: pointer;
+}
+
+.radio__text:before {
+    content: '';
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #3e3f43;
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.text-left:before {
+    background-image: url(align-left.svg);
+}
+
+.text-center:before {
+    background-image: url(align-center.svg);
+}
+
+.text-right:before {
+    background-image: url(align-right.svg);
+}
+
+.radio input:checked + .radio__text:before {
+    background-color: #ff6f50;
+
+}
+
+.font-option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.panel__font-option {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel__font-size {
+    margin-top: 15px;
+}
+
+.font-size {
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-size__title {
+    color: #fff;
+    font-size: 9px;
+    text-align: right;
+    width: 60px;
+}
+
+.font-size__value {
+    color: #fff;
+    text-align: center;
+    width: 35px;
+    border: 1px solid #3e3f43;
+    height: 24px;
+}
+
+.toddler {
+    width: 110px;
+    margin: 0 15px;
+}
+
+.ui-slider-handle {
+    height: 15px !important;
+    width: 15px !important;
+    border: 1px solid #3e3f43  !important;
+    border-radius: 50% !important;
+}
+
+.ui-widget {
+    height: 5px !important;
+}
+
+#fontSize, #letterSpacing, #lineHeght {
+    background: #ff6f50;
+    border: none !important;
+}
+
+.checkbox__center {
+    margin: 0 -27px;
+}
+
+.selecter-selected {
+    padding: 5px !important;
+    height: 24px !important;
+    color: #fff !important;
+    background-color: #3e3f43 !important;
+    border-radius: 0 !important;
+    font-family: 'Lato', sans-serif;    
+    border: none !important;
+}
+
+.selecter {
+    max-width: 100% !important;
+    font-family: 'Lato', sans-serif;    
+    width: 196px;
+}
+
+.selecter-options {
+    border: 1px solid #3e3f43 !important;    
+}
+
+.selecter-item {
+    background-color: #3e3f43 !important;
+    color: #fff !important;
+    border-color: #ff6f50 !important;
+}
+
+.ui-state-focus {
+    outline: none !important;
+}

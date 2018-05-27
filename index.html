@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <script src="jquery.fs.selecter.min.js"></script>
+    <script src="modernizr.js"></script>
+    <link rel="stylesheet" href="jquery.fs.selecter.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="panel">
+            <div class="panel__title">
+                <p>text options</p>
+            </div>
+            <div class="panel__font">
+                <div class="font__label">
+                    
+                </div>
+                <select class="font__select" name="fonts" id="font">
+                    <option value="Ya" class="font__option">Ya</option>
+                    <option value="Ocheny" class="font__option">Ocheny</option>
+                    <option value="Staralsay" class="font__option">Staralsay</option>
+                </select>
+                <div class="font__color"></div>
+            </div>
+            <div class="panel__font-option">
+                <div class="font-option">
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <div class="checkbox__text checkbox__bold"></div>
+                    </label>
+                    <label class="checkbox checkbox__center">
+                        <input type="checkbox" />
+                        <div class="checkbox__text checkbox__italic"></div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" />
+                        <div class="checkbox__text checkbox_upper"></div>
+                    </label>
+                </div>
+                <div class="font-option">
+                    <label class="radio">
+                        <input type="radio" name="text"/>
+                        <div class="radio__text text-left"></div>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="text"/>
+                        <div class="radio__text text-center"></div>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="text"/>
+                        <div class="radio__text text-right"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="panel__font-size">
+                <div class="font-size">
+                    <p class="font-size__title">Font size</p>
+                    <div class="toddler">
+                        <div id="fontSize"></div>
+                    </div>
+                    <div class="font-size__value contentSlider">
+                    </div>
+                </div>
+                <div class="font-size">
+                    <p class="font-size__title">Line height</p>
+                    <div class="toddler">
+                        <div id="lineHeght"></div>
+                    </div>
+                    <div class="font-size__value contentLineHeght">
+                    </div>
+                </div>
+                <div class="font-size">
+                    <p class="font-size__title">Letter spacing</p>
+                    <div class="toddler">
+                        <div id="letterSpacing"></div>
+                    </div>
+                    <div class="font-size__value contentLetterSpacing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
